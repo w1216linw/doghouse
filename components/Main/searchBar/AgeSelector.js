@@ -17,12 +17,12 @@ const AgeSelector = () => {
     }, 500);
 
     return () => clearTimeout(timer);
-  }, [minMax]);
+  }, [minMax, setAge]);
 
   useEffect(() => {
     if (age.min !== minMax[0] || age.max !== minMax[1])
       setMinMax([age.min, age.max]);
-  }, [age]);
+  }, [age, setMinMax]);
 
   return (
     <div className="w-56">

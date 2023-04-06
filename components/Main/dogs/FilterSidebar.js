@@ -43,7 +43,7 @@ const FilterSidebar = () => {
         }
       }
     );
-  }, [age, selectedBreeds, zipCodes, sort]);
+  }, [age, selectedBreeds, zipCodes, sort, setError, setCurrentPage]);
 
   return (
     <div className="w-52 pr-4">

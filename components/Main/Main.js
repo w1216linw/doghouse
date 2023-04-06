@@ -2,6 +2,7 @@ import { errorState, isSearchedState } from "@/atoms/pageState";
 import useAutoLogin from "@/hooks/useAutoLogin";
 import { fetchBreeds } from "@/utility/fetchBreeds";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import Logout from "../auth/Logout";
@@ -36,9 +37,9 @@ const Main = () => {
       <div className="grid place-items-center h-screen">
         <div className="text-center">
           <h1 className="mb-12 text-4xl">Error: {error}</h1>
-          <a href="/" className="underline text-2xl">
+          <Link href="/" className="underline text-2xl">
             try again
-          </a>
+          </Link>
         </div>
       </div>
     );

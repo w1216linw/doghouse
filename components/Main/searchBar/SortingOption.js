@@ -14,7 +14,7 @@ const SortingOption = ({ option, setExpanded }) => {
 
   useEffect(() => {
     setActive(selectSort === option.join(":"));
-  }, [selectSort]);
+  }, [selectSort, setActive]);
   return (
     <button
       onClick={onChangeSort}

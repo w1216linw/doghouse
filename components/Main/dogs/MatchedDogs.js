@@ -48,7 +48,7 @@ const MatchedDogs = () => {
   if (currentPage.total < 1) {
     return (
       <div className="text-center mx-auto space-y-2">
-        <p className="text-3xl font-bold">We didn't find any dogs</p>
+        <p className="text-3xl font-bold">We did not find any dogs</p>
         <button
           className="px-3 py-1 bg-blue-300 rounded-xl"
           onClick={resetFilter}

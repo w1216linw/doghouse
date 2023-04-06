@@ -21,7 +21,7 @@ const MatchedDog = () => {
         setLocation(res[0]);
       }
     });
-  }, [dog]);
+  }, [dog, setError]);
   return (
     <div className="h-screen flex flex-col items-center justify-center gap-5 relative">
       <Link
